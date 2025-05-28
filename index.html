@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open World Voxel Game</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="scripts/stats.min.js"></script>
+  <link rel="stylesheet" href="css/lil-gui.min.css" />
+  <script type="importmap">
+	{
+	  "imports": {
+		"three": "./scripts/three.module.js",
+		"three/addons/": "./scripts/controls/",
+		"lil-gui": "./scripts/gui/lil-gui.module.min.js",
+		"simplexnoise": "./scripts/SimplexNoise.js",
+		"pointerlockcontrols": "./scripts/PointerLockControls.js",
+		"effectcomposer": "./scripts/EffectComposer.js",
+		"renderpass": "./scripts/RenderPass.js",
+		"shaderpass": "./scripts/ShaderPass.js",
+		"firstpersonshader": "./scripts/CustomShaderFirstPerson.js"
+	  }
+	}
+  </script>
+</head>
+<body>
+  <div id="info">
+  <div id="player-position"></div>
+  </div>
+    <div id="toolbar-container">
+    <div id="toolbar">
+      <img class="toolbar-icon" id="toolbar-1" src="textures/grass.png"></img>
+      <img class="toolbar-icon" id="toolbar-2" src="textures/dirt.png"></img>
+      <img class="toolbar-icon" id="toolbar-3" src="textures/stone.png"></img>
+      <img class="toolbar-icon" id="toolbar-4" src="textures/coal_ore.png"></img>
+      <img class="toolbar-icon" id="toolbar-5" src="textures/iron_ore.png"></img>
+      <img class="toolbar-icon" id="toolbar-6" src="textures/tree_top.png"></img>
+      <img class="toolbar-icon" id="toolbar-7" src="textures/leaves.png"></img>
+      <img class="toolbar-icon" id="toolbar-8" src="textures/sand.png"></img>
+      <img class="toolbar-icon selected" id="toolbar-0" src="textures/pickaxe.png"></img>
+    </div>
+  </div>
+  
+  <div id="status"></div>
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
